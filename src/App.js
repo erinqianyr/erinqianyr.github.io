@@ -1,29 +1,30 @@
 import React, { Component } from "react";
 import "./App.css";
-import {Grid, Cell} from "react-mdl";
-import Navbar from "./Components/Navbar";
+import NavBar from "./Components/Navbar";
 import Section from "./Components/Section";
 import About from "./Components/About";
+import IndexHeader from "./Components/IndexHeader.js";
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <Navbar />
+        <NavBar id="top"/>
+        <IndexHeader/>
         <About/>
         <Section
           title="Experiences"
-          dark={false}
+          dark={true}
           id="section3"
         />
         <Section
           title="Projects"
-          dark={true}
+          dark={false}
           id="section4"
         />
         <Section
           title="Section 5"
-          dark={false}
+          dark={true}
           id="section5"
         />
       </div>

@@ -7,14 +7,20 @@
     "react-dom": "^16.8.6",
     "react-mdl": "^1.11.0",
     "react-scripts": "0.9.5",
-    "react-scroll": "^1.7.12"
+    "react-scroll": "^1.7.12",
+    "reactstrap": "^8.0.1"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "gh-pages": "^2.0.1"
+  },
   "homepage": "https://yyyan97.github.io/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+
   }
 }
