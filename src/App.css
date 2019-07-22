@@ -45,13 +45,29 @@
   cursor: pointer;
 }
 
+.navbar.navbar-transparent .navbar-toggler .navbar-toggler-bar{
+  background: #333 !important;
+}
+
+.navbar-nav > li > a,
+.navbar.navbar-transparent .navbar-brand {
+  color:#333 !important;
+}
+
+.name {
+  color: black;
+  font-weight: 700;
+  margin: 0;
+}
+
 .section {
   padding:0px !important;
 }
 
 .section-dark {
-  background: #cedbed;
+  background-color: #F5D9D8;
 }
+
 
 .section-content {
   /* max-width: 800px; */
@@ -73,16 +89,50 @@
 }
 
 
-.presentation-title {
-  font-size: 20px;
-}
+
 
 .fab,.far,.fas {
   /* display: inline; */
   padding: 10px;
 }
 
+li{
+  line-height: 20px;
+  font-family: "Montserrat", "Helvetica", Arial, sans-serif;
+  font-size: 15px;
+}
+
+hr{
+  display: block; height: 1px;
+    border: 0; border-top: 1px solid #ccc;
+    margin: 3em 0; padding: 0;
+}
+
+
+.card-register{
+  background-color:#F1ECCB
+}
+
+
+
+
 /*from Animate.css*/
+
+@-webkit-keyframes fadeIn {
+            0% {opacity: 0;}
+            100% {opacity: 1;}
+         }
+
+         @keyframes fadeIn {
+            0% {opacity: 0;}
+            100% {opacity: 1;}
+         }
+
+         .fadeIn {
+            -webkit-animation-name: fadeIn;
+            animation-name: fadeIn;
+         }
+
 @-webkit-keyframes pulse {
   from {
     -webkit-transform: scale3d(1, 1, 1);
@@ -123,8 +173,8 @@
 }
 
 .animated {
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
@@ -132,51 +182,6 @@
 .animated.infinite {
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
-}
-
-.animated.delay-1s {
-  -webkit-animation-delay: 1s;
-  animation-delay: 1s;
-}
-
-.animated.delay-2s {
-  -webkit-animation-delay: 2s;
-  animation-delay: 2s;
-}
-
-.animated.delay-3s {
-  -webkit-animation-delay: 3s;
-  animation-delay: 3s;
-}
-
-.animated.delay-4s {
-  -webkit-animation-delay: 4s;
-  animation-delay: 4s;
-}
-
-.animated.delay-5s {
-  -webkit-animation-delay: 5s;
-  animation-delay: 5s;
-}
-
-.animated.fast {
-  -webkit-animation-duration: 800ms;
-  animation-duration: 800ms;
-}
-
-.animated.faster {
-  -webkit-animation-duration: 500ms;
-  animation-duration: 500ms;
-}
-
-.animated.slow {
-  -webkit-animation-duration: 2s;
-  animation-duration: 2s;
-}
-
-.animated.slower {
-  -webkit-animation-duration: 3s;
-  animation-duration: 3s;
 }
 
 @media (print), (prefers-reduced-motion: reduce) {

@@ -27,32 +27,22 @@ import { Container } from "reactstrap";
 function IndexHeader() {
   return (
       <div
-        className="page-header section-dark"
+        className="page-header section"
         style={{
           backgroundImage:
-            "url(" + require("../assets/img/antoine-barres.jpg") + ")"
+            "url(" + require("../assets/img/background.svg") + ")"
         }}
       >
-        <div className="filter" />
         <div className="content-center">
           <Container>
-            <div className="title-brand">
-              <h1 className="presentation-title animated infinite pulse" style={{fontSize:"3em"}}>Yanran (Erin) Qian</h1>
-              <div className="fog-low">
-                <img alt="..." src={require("../assets/img/fog-low.png")} />
-              </div>
-              <div className="fog-low right">
-                <img alt="..." src={require("../assets/img/fog-low.png")} />
-              </div>
+            <div className="title-brand animated fadeIn">
+              <h1 className="name animated infinite pulse" style={{fontSize:"3em"}}>Yanran (Erin) Qian</h1>
+
             </div>
+
           </Container>
         </div>
-        <div
-          className="moving-clouds"
-          style={{
-            backgroundImage: "url(" + require("../assets/img/clouds.png") + ")"
-          }}
-        />
+
 
       </div>
   );

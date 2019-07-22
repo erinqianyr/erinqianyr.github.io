@@ -41,9 +41,9 @@ function IndexNavbar() {
     };
   });
 
-  const scrollToTop = () => {
-    scroll.scrollToTop();
-  };
+  // const scrollToTop = () => {
+  //   scroll.scrollToTop();
+  // };
 
   return (
     <Navbar className={classnames("fixed-top", navbarColor)} expand="lg">
@@ -87,7 +87,7 @@ function IndexNavbar() {
             <NavItem>
             <Link
               activeClass="active"
-              to="section3"
+              to="experience"
               spy={true}
               smooth={true}
               offset={-70}
@@ -99,7 +99,7 @@ function IndexNavbar() {
             <NavItem>
             <Link
               activeClass="active"
-              to="section4"
+              to="projects"
               spy={true}
               smooth={true}
               offset={-70}
@@ -121,8 +121,7 @@ function IndexNavbar() {
             </Link>
             </NavItem>
             <NavItem>
-            <a href="../../TestResume.pdf" download>Download</a>
-
+            <a style={{color:'inherit'}} href="../../TestResume.pdf" download>Resume</a>
             </NavItem>
           </Nav>
         </Collapse>
